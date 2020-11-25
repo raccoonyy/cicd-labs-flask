@@ -1,0 +1,10 @@
+serviceName: '13-124-238-160' # 자신의 서비스 이름으로 바꿔주세요
+containers:
+  flask:
+    image: '${IMAGE_NAME}' # 바꿔주세요
+    ports:
+      '8080': 'HTTP'
+publicEndpoint:
+ containerName: 'flask'
+ containerPort: 8080
+
