@@ -17,7 +17,7 @@ jobs:
          aws-region: ap-northeast-2
      - name: Run
        env:
-         SERVICE_NAME: 127-0-0-1 # 자신의 서비스 이름으로 변경합니다.
+         SERVICE_NAME: 13-124-238-160 # 자신의 서비스 이름으로 변경합니다.
          IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/lightsail-flask:${{ github.sha }}
        run: |
          echo $IMAGE_NAME:$IMAGE_TAG
